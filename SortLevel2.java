@@ -5,10 +5,8 @@ public class SortLevel2 {
         for (int j = i + step; j < array.length; j += step) {
             int tmpForExchange = array[j];
             for (int k = j - step; k >= i && array[k] > tmpForExchange; k -= step) {
-                if (array[k] > tmpForExchange) {
-                    array[k + step] = array[k];
-                    array[k] = tmpForExchange;
-                }
+                  array[k + step] = array[k];
+                  array[k] = tmpForExchange;
             }
         }
 
