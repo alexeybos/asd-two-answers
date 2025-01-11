@@ -11,6 +11,21 @@ public class SortLevel {
             }
         }
     }
+
+    public static ArrayList<Integer> KnuthSequence(int array_size)
+    {
+        ArrayList<Integer> knuthSequence = new ArrayList<>();
+        if (array_size == 0) return knuthSequence;
+        knuthSequence.add(1);
+        for (; ;) {
+            int nextStep = 3 * knuthSequence.getFirst() + 1;
+            if (nextStep < array_size) {
+                knuthSequence.addFirst(nextStep);
+            } else {
+                return knuthSequence;
+            }
+        }
+    }
 }
 
 
