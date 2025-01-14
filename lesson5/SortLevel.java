@@ -1,5 +1,3 @@
-package org.skillsmart.asd2.lesson5;
-
 import java.util.*;
 
 public class SortLevel {
